@@ -1,0 +1,53 @@
+.ant-layout-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
+  padding: 0 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  .menu-container li:hover {
+    color: darkgray !important;
+  }
+
+  &__logo {
+    object-fit: contain;
+    max-height: 100%;
+    margin-right: 80px;
+  }
+}
+
+.toggle-button {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+}
+
+.menu-large {
+  display: block;
+
+  .ant-menu-horizontal,
+  .ant-menu-light.ant-menu-horizontal > .ant-menu-item::after,
+  .ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-item::after,
+  .ant-menu-light.ant-menu-horizontal > .ant-menu-submenu::after,
+  .ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-submenu::after {
+    border-bottom: unset;
+  }
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}

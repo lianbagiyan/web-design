@@ -1,0 +1,131 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  align-items: center;
+  background-color: #3f3f3f;
+
+  .ant-menu {
+    border-inline-end: unset !important;
+  }
+
+  &__about {
+    width: 63%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #585656;
+    padding: 50px 0 65px;
+
+    &__title {
+      color: white !important;
+    }
+
+    & > div {
+      margin: 0 8px;
+    }
+  }
+
+  &__payment {
+    width: 63%;
+    padding: 60px 0;
+    border-bottom: 1px solid #585656;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-weight: 700 !important;
+      color: white !important;
+    }
+
+    &__divider {
+      width: 55px;
+      border: 2px solid white;
+    }
+
+    &__methods {
+      padding-top: 50px;
+
+      .ant-col {
+        margin-right: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+
+      .img {
+        width: 85px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__license {
+    width: 63%;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+    border-bottom: 1px solid #585656;
+
+    &__text {
+      color: white;
+      padding-left: 70px;
+    }
+
+    &__logo {
+      padding: 0 70px 0 15px;
+      height: 72px;
+    }
+  }
+
+  &__info {
+    width: 63%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 40px;
+
+    &__text {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer-container__info ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-container {
+    &__about,
+    &__payment,
+    &__license,
+    &__info {
+      width: 90%;
+    }
+
+    &__license {
+      align-items: center;
+
+      &__text {
+        padding-left: 0;
+      }
+
+      &__logo {
+        padding: 0 0 0 15px;
+      }
+    }
+
+    &__about {
+      flex-wrap: wrap;
+
+      .ant-menu-submenu-title {
+        padding-inline: 0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ant-layout-header,
+.ant-menu {
+  background: #3f3f3f;
+  color: white;
+}
+
+.ant-carousel {
+  padding-top: 100px;
+}
+
+.ant-carousel .slick-dots li {
+  width: 25px;
+}
+
+.ant-carousel .slick-dots li button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.ant-carousel .slick-dots-bottom {
+  bottom: 60px;
+}
+
+.ant-carousel .slick-slider .custom-prev-arrow,
+.ant-carousel .slick-slider .custom-next-arrow {
+  position: absolute;
+  color: white;
+  font-size: 105px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ant-carousel .slick-slider .custom-prev-arrow {
+  left: 0;
+}
+
+.ant-carousel .slick-slider .custom-next-arrow {
+  right: 0;
+}
+
+@media (max-width: 1300px) {
+  .ant-carousel .slick-dots-bottom {
+    bottom: 30px;
+  }
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu-item-selected {
+  background-color: transparent;
+  color: inherit;
+}
+
+.ant-menu-item:hover {
+  border-bottom: none;
+}
