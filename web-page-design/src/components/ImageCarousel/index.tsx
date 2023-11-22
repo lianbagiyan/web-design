@@ -65,6 +65,7 @@ const ImageCarousel = () => {
           src={image1}
           alt="Image 1"
           style={{ width: '100%', height: 'auto' }}
+          loading="lazy"
         />
       </div>
       <div>
@@ -72,6 +73,7 @@ const ImageCarousel = () => {
           src={image2}
           alt="Image 2"
           style={{ width: '100%', height: 'auto' }}
+          loading="lazy"
         />
       </div>
     </Carousel>

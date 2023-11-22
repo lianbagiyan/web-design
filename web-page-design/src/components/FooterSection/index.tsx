@@ -41,6 +41,7 @@ const FooterSection = () => {
                   src={paymentLogo}
                   alt={`Photo ${index + 1}`}
                   className="footer-container__payment__methods__img"
+                  loading="lazy"
                 />
               </Col>
             ))}
@@ -50,8 +51,9 @@ const FooterSection = () => {
               <Col key={index} xs={6} sm={6} md={4} lg={3}>
                 <img
                   src={paymentLogo}
-                  alt={`Photo ${index + 6}`} // Start counting from 6 for the second line
+                  alt={`Photo ${index + 6}`}
                   className="footer-container__payment__methods__img"
+                  loading="lazy"
                 />
               </Col>
             ))}
@@ -73,6 +75,7 @@ const FooterSection = () => {
           src={licenseLogo}
           alt="license-logo"
           className="footer-container__license__logo"
+          loading="lazy"
         />
       </div>
       <div className="footer-container__info">

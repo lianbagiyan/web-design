@@ -22,6 +22,7 @@ const BodySection = () => {
             src={mainContentImg}
             className="body-block__main__content__img"
             alt="mainContentImg"
+            loading="lazy"
           />
           <Paragraph className="body-block__main__content__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur

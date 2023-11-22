@@ -14,7 +14,7 @@ const { Paragraph, Title } = Typography;
 const Card = ({ imgSrc, title, text, btnText }: CardItems) => {
   return (
     <div className="card">
-      <img src={imgSrc} alt="img" className="card__img" />
+      <img src={imgSrc} alt="img" className="card__img" loading="lazy" />
       <div className="card__body">
         <Title className="card__body__title" level={3}>
           {title}

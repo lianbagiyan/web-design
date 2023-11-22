@@ -21,7 +21,7 @@ const HeaderBlock = () => {
 
   return (
     <Header className="header">
-      <img src={HeaderLogo} alt="Logo" className="header__logo" />
+      <img src={HeaderLogo} alt="Logo" className="header__logo" loading="lazy" />
 
       <div className="menu-container">
         <div className="menu-large">
